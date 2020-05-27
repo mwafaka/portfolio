@@ -17,11 +17,7 @@ h3 {
   margin: 0;
   font-weight: 400;
 }
-h1.lg-heading,
-h2.lg-heading,
-h3.lg-heading {
-  font-size: 6rem;
-}
+
 h1.sm-heading,
 h2.sm-heading,
 h3.sm-heading {
@@ -33,7 +29,7 @@ h3.sm-heading {
 }
 
 a {
-  color: #fff;
+  color: rgb(233, 221, 221);
   text-decoration: none;
 }
 
@@ -89,7 +85,7 @@ main#home h1 {
   width: 28px;
   height: 3px;
   margin: 0 0 5px 0;
-  background: #fff;
+  background: rgb(245, 3, 3);
   transition: all 0.5s ease-out;
 }
 .menu-btn.close {
