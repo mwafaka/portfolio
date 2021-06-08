@@ -2,15 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background: #444;
-  color: #fff;
-  height: 100%;
-  margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
-}
-
 h1,
 h2,
 h3 {
@@ -18,18 +9,8 @@ h3 {
   font-weight: 400;
 }
 
-h1.sm-heading,
-h2.sm-heading,
-h3.sm-heading {
-  margin-bottom: 2rem;
-  padding: 0.2rem 1rem;
-  background-color: lightgray;
-  color: #444;
-  opacity: 0.5;
-}
-
 a {
-  color: rgb(233, 221, 221);
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
@@ -37,10 +18,6 @@ header {
   position: fixed;
   z-index: 2;
   width: 100%;
-}
-
-.text-secondary {
-  color: blue;
 }
 
 main {
@@ -54,7 +31,7 @@ main .icon a {
   padding: 0.4rem;
 }
 main .icon a:hover {
-  color: blue;
+  color: rgb(0, 0, 0);
   transition: all 0.5s ease-out;
 }
 main#home {
@@ -62,8 +39,8 @@ main#home {
 }
 main#home h1 {
   margin-top: 20vh;
+  font-size: 30px;
 }
-
 #myVideo {
   position: fixed;
   right: 0;
@@ -81,11 +58,12 @@ main#home h1 {
   cursor: pointer;
   transition: all 0.5s ease-out;
 }
+
 .menu-btn .btn-line {
   width: 28px;
   height: 3px;
   margin: 0 0 5px 0;
-  background: rgb(245, 3, 3);
+  background-color: rgb(7, 7, 7);
   transition: all 0.5s ease-out;
 }
 .menu-btn.close {
@@ -142,12 +120,12 @@ main#home h1 {
   transform: translate3d(0, 0, 0);
 }
 .menu-branding .portrait {
-  background-image: url("https://images.pexels.com/photos/327540/pexels-photo-327540.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940s");
+  background-image: url("../../img/image.jpg");
   width: 100%;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  border: solid 1px gray;
+  border: solid 1px rgb(0, 0, 0);
   position: fixed;
 }
 .menu .nav-item {
@@ -164,10 +142,11 @@ main#home h1 {
   text-transform: uppercase;
   padding: 0.9rem;
   text-decoration: none;
+  color: #ccc;
   transition: all 0.5s ease-out;
 }
 .menu .nav-link:hover {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .nav-item:nth-child(1) {
@@ -193,9 +172,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  background: #444;
   font-size: 13px;
-  font-family: "Arvo", monospace;
 }
 @supports (display: grid) {
   body {
@@ -217,12 +194,10 @@ body {
     display: block;
   }
 }
-
 h1 {
   font-size: 2rem;
   margin: 0 0 0em;
 }
-
 .grid {
   display: grid;
   grid-gap: 30px;
@@ -230,7 +205,6 @@ h1 {
   grid-auto-rows: 150px;
   grid-auto-flow: row dense;
 }
-
 .item {
   position: relative;
   display: flex;
@@ -338,7 +312,7 @@ h1 {
   float: right;
 }
 
-#hh {
+/* #hh {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   display: inline-block;
@@ -347,7 +321,7 @@ h1 {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   margin: 0 0 0.1em 0;
   padding: 0 0 0.4em 0;
-}
+} */
 
 h3 {
   font-family: "Lato", sans-serif;
@@ -356,7 +330,7 @@ h3 {
   margin: 1em 0 0.4em 0;
 }
 
-.btn {
+/* .btn {
   font-size: 1.0625em;
   display: inline-block;
   padding: 0.74em 1.5em;
@@ -369,7 +343,7 @@ h3 {
   border-bottom-color: #8c8c8c;
   font-family: "Lato", sans-serif;
   font-weight: 300;
-}
+} */
 .btn:hover {
   background-color: #bfbfbf;
 }
@@ -406,12 +380,7 @@ form ul li p {
 }
 form ul li p.right {
   float: right;
-}
-form ul li .divider {
-  margin: 0.5em 0 0.5em 0;
-  border: 0;
-  height: 1px;
-  width: 100%;
+
   display: block;
   background-color: #4f6fad;
   background-image: linear-gradient(to right, #ee9cb4, #4f6fad);
