@@ -25,3 +25,44 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+/*  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+
+  // 20 is an arbitrary number here, just to make you think if you need the prevScrollpos variable:
+  if (currentScrollPos > 20) {
+    // I am using 'display' instead of 'top':
+    document.getElementById("nav-scroll").style.display = "none";
+  } else {
+    document.getElementById("nav-scroll").style.display = "initial";
+  }
+}  */
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (currentScrollPos > prevScrollpos) {
+    document.getElementById("navbar").style.display = 'none';
+  } else {
+    document.getElementById("navbar").style.display = "initial";
+  }
+  prevScrollpos = currentScrollPos;
+}  
+
+
+
+/* ///////////////////////// */
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
