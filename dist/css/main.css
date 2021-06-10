@@ -1,6 +1,6 @@
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 h1,
 h2,
@@ -14,6 +14,10 @@ h3 {
   top: 0;
   width: 100%;
   transition: top 0.3s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#navbar a:hover {
+  color: rgb(168, 117, 117);
 }
 
 li {
@@ -99,7 +103,7 @@ main#home h1 {
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+
   visibility: hidden;
 }
 .menu.show {
@@ -128,7 +132,7 @@ main#home h1 {
   transform: translate3d(0, 0, 0);
 }
 .menu-branding {
-  background-color: #444;
+  background-color: #d3a0a0;
   transform: translate3d(0, 100%, 0);
   transition: all 0.5s ease-out;
 }
@@ -136,12 +140,12 @@ main#home h1 {
   transform: translate3d(0, 0, 0);
 }
 .menu-branding .portrait {
-  background-image: url("../../img/image.jpg");
+  /*  background-image: url("../../img/portrait.png"); */
   width: 100%;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  border: solid 1px rgb(0, 0, 0);
+  border: solid 1px rgb(226, 210, 210);
   position: fixed;
 }
 .menu .nav-item {
@@ -162,7 +166,7 @@ main#home h1 {
   transition: all 0.5s ease-out;
 }
 .menu .nav-link:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(175, 93, 93);
 }
 
 .nav-item:nth-child(1) {
@@ -198,7 +202,8 @@ body {
 
 .section {
   display: none;
-  padding: 2rem;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 @media screen and (min-width: 768px) {
   .section {
@@ -224,6 +229,8 @@ h1 {
 .item {
   position: relative;
   display: flex;
+  height: 100%;
+  width: 80%;
   flex-direction: column;
   justify-content: flex-end;
   box-sizing: border-box;
@@ -231,7 +238,6 @@ h1 {
   color: #fff;
   grid-column-start: auto;
   grid-row-start: auto;
-  color: #fff;
   background: url("https://cdn-images-1.medium.com/max/1600/1*6cpWeq1_VMYtd1LgHwxKug.jpeg");
   background-size: cover;
   background-position: center;
@@ -267,7 +273,8 @@ h1 {
 .item:hover:after {
   opacity: 0;
 }
-.item--medium {
+
+/* .item--medium {
   grid-row-end: span 2;
 }
 .item--large {
@@ -275,7 +282,7 @@ h1 {
 }
 .item--full {
   grid-column-end: auto;
-}
+} */
 @media screen and (min-width: 768px) {
   .item--full {
     grid-column: 1/-1;
@@ -437,6 +444,7 @@ form small {
 .slideshow-container {
   top: 10%;
   width: 50%;
+  height: 60%;
   position: relative;
   margin: auto;
 }
@@ -537,7 +545,6 @@ form small {
     opacity: 1;
   }
 }
-.con {
-  margin-bottom: 0px;
-  width: 50%;
+#mwafak {
+  font-size: 1.5rem;
 }

@@ -5,7 +5,7 @@ const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
 const navItems = document.querySelectorAll(".nav-item");
 
-//set Inintial state of menu
+//menu hide and show
 var showMenu = false;
 menuBtn.addEventListener("click", toggleMenu);
 function toggleMenu() {
@@ -26,17 +26,7 @@ function toggleMenu() {
   }
 }
 
-/*  window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-
-  // 20 is an arbitrary number here, just to make you think if you need the prevScrollpos variable:
-  if (currentScrollPos > 20) {
-    // I am using 'display' instead of 'top':
-    document.getElementById("nav-scroll").style.display = "none";
-  } else {
-    document.getElementById("nav-scroll").style.display = "initial";
-  }
-}  */
+/////////////// navbar hide and show//////////////
 
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
@@ -51,7 +41,7 @@ window.onscroll = function() {
 
 
 
-/* ///////////////////////// */
+/* //////////slide effect/////////////// */
 var slideIndex = 0;
 showSlides();
 
@@ -64,5 +54,5 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 3000); // Change image every 2 seconds
+  setTimeout(showSlides, 3000);
 }
